@@ -10,6 +10,11 @@
           target.innerText = document.forms.id_form1.id_textBox1.value;
           //target.innerText = document.id_form1.id_textBox1.value;//これでもOK
         }
+        function onButtonClick2() {
+          target = document.getElementById("output2");
+          target.innerText = document.forms.id_form2.id_textBox2.value;
+          //target.innerText = document.id_form2.id_textBox2.value;//これでもOK
+        }
   </script>
 
 </head>
@@ -27,10 +32,10 @@
   <h2>Yuko</h2>
   <form name="form2" id="id_form2" action="">
     <input name="textBox2" id="id_textBox2" type="text" value="" />
-    <input type="button" value="Exec" onclick="onButtonClick();" />
+    <input type="button" value="Exec" onclick="onButtonClick2();" />
   </form>
   <hr/>
-  <div id="output"></div>
+  <div id="output2"></div>
 
 </body>
 </html>
